@@ -1,0 +1,34 @@
+html {
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: rgb(131, 214, 240);
+  background: linear-gradient(
+    130deg,
+    rgba(131, 214, 240, 1) 0%,
+    rgba(197, 120, 245, 1) 100%
+  );
+}
+
+.App {
+  text-align: center;
+}
+
+.View {
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #000;
+  border-width: thin;
+  padding: 2rem;
+  width: 50%;
+}
+
+#button {
+  width: 235px;
+}
+
+@media only screen and (max-width: 480px) {
+  #button {
+    width: 150px;
+  }
+}
