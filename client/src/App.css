@@ -1,3 +1,7 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
 html {
   min-height: 100%;
   background-repeat: no-repeat;
@@ -10,8 +14,18 @@ html {
   );
 }
 
+header {
+  font-weight: bold;
+}
+
+h4 {
+  font-style: italic;
+  margin-top: 5rem;
+}
+
 .App {
   text-align: center;
+  margin-top: 5rem;
 }
 
 .View {
@@ -24,11 +38,35 @@ html {
 }
 
 #button {
+  margin-top: 1rem;
   width: 235px;
+  padding: 10px 24px;
+  border-radius: 2px;
+  background-color: #90c3f1;
+  color: black;
+  border: 2px solid #90c3f1;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#button:hover {
+  background-color: #b096f3;
+  border: 2px solid #b096f3;
+  color: white;
 }
 
 @media only screen and (max-width: 480px) {
   #button {
     width: 150px;
   }
+}
+
+.sticky-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
 }

@@ -7,7 +7,7 @@
     "client-install": "cd client && npm install",
     "start": "node server.js",
     "server": "nodemon server.js",
-    "client": "npm start --prefix client",
+    "client": "cd client && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
@@ -21,12 +21,12 @@
   },
   "homepage": "https://github.com/anthonydevelops/file-metadata-microservice#readme",
   "dependencies": {
+    "concurrently": "^4.0.1",
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "multer": "^1.4.0"
   },
   "devDependencies": {
-    "concurrently": "^4.0.1",
     "nodemon": "^1.18.4"
   }
 }
