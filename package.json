@@ -1,0 +1,32 @@
+{
+  "name": "file-metadata-microservice",
+  "version": "1.0.0",
+  "description": "This was a challenge project from FreeCodeCamp that utilizes both frontend & backend to interact with the user. Built with React, Express, & Node.",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonydevelops/file-metadata-microservice.git"
+  },
+  "author": "anthonydevelops",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthonydevelops/file-metadata-microservice/issues"
+  },
+  "homepage": "https://github.com/anthonydevelops/file-metadata-microservice#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "multer": "^1.4.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "nodemon": "^1.18.4"
+  }
+}
